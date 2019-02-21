@@ -1,6 +1,7 @@
 import { Container } from './container';
 import { Lazy } from './lazy';
-import 'reflect-metadata';
+
+declare const Reflect: any;
 
 const InjectProperties = Symbol('inject:property');
 type InjectPropertiesType = { key: string | symbol, token: any }[];
@@ -9,7 +10,7 @@ const InjectCtorParams = Symbol('inject:ctor_params');
 type InjectCtorParamsType = any[];
 
 export function Injectable(): ClassDecorator {
-    return (target) => { };
+    return (_target) => { };
 }
 
 export function Inject(token?: any): ParameterDecorator & PropertyDecorator {
