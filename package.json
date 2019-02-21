@@ -1,6 +1,6 @@
 {
   "name": "@andrei-tatar/ts-ioc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "build": "tsc -p .",
@@ -13,7 +13,7 @@
   "devDependencies": {
     "typescript": "^3.3.3"
   },
-  "dependencies": {
+  "peerDependencies": {
     "reflect-metadata": "^0.1.13"
   },
   "repository": {
